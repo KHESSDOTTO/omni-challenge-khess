@@ -38,7 +38,7 @@ export class TransfersService {
       return;
     } catch (error) {
 
-      throw new InternalServerErrorException('Unable to process transaction');
+      throw error;
     }
   }
 
